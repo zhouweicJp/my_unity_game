@@ -1,0 +1,136 @@
+{
+  "units": {
+    "orc": {
+      "prefab": "Assets/RTS Engine/Demo/UnitExtension/Resources/Prefabs/orc.prefab",
+      "maxHealth": 70,
+      "initialHealth": 70,
+      "attackDamageUnit": 13,
+      "attackDamageBuilding": 13
+    },
+    "archer_level2": {
+      "prefab": "Assets/RTS Engine/Demo/UnitExtension/Resources/Prefabs/archer_level2.prefab",
+      "maxHealth": 60,
+      "initialHealth": 70,
+      "attackDamageUnit": 8,
+      "attackDamageBuilding": 8
+    },
+    "villager": {
+      "prefab": "Assets/RTS Engine/Demo/UnitExtension/Resources/Prefabs/villager.prefab",
+      "maxHealth": 40,
+      "initialHealth": 40
+    },
+    "spacecraft": {
+      "prefab": "Assets/RTS Engine/Demo/UnitExtension/Resources/Prefabs/spacecraft.prefab",
+      "maxHealth": 130,
+      "initialHealth": 130,
+      "attackDamageUnit": 14,
+      "attackDamageBuilding": 22
+    },
+    "heavy_infantry": {
+      "prefab": "Assets/RTS Engine/Demo/UnitExtension/Resources/Prefabs/heavy_infantry.prefab",
+      "maxHealth": 170,
+      "initialHealth": 170,
+      "attackDamageUnit": 17,
+      "attackDamageBuilding": 17
+    },
+    "healer": {
+      "prefab": "Assets/RTS Engine/Demo/UnitExtension/Resources/Prefabs/healer.prefab",
+      "maxHealth": 80,
+      "initialHealth": 80
+    },
+    "light_infantry": {
+      "prefab": "Assets/RTS Engine/Demo/UnitExtension/Resources/Prefabs/light_infantry.prefab",
+      "maxHealth": 125,
+      "initialHealth": 125,
+      "attackDamageUnit": 13,
+      "attackDamageBuilding": 13
+    },
+    "archer_level1": {
+      "prefab": "Assets/RTS Engine/Demo/UnitExtension/Resources/Prefabs/archer_level1.prefab",
+      "maxHealth": 70,
+      "initialHealth": 70,
+      "attackDamageUnit": 14,
+      "attackDamageBuilding": 14
+    },
+    "catapult": {
+      "prefab": "Assets/RTS Engine/Demo/UnitExtension/Resources/Prefabs/catapult.prefab",
+      "maxHealth": 130,
+      "initialHealth": 130,
+      "attackDamageUnit": 14,
+      "attackDamageBuilding": 22
+    },
+    "converter": {
+      "prefab": "Assets/RTS Engine/Demo/UnitExtension/Resources/Prefabs/converter.prefab",
+      "maxHealth": 80,
+      "initialHealth": 80
+    },
+    "siege_tower": {
+      "prefab": "Assets/RTS Engine/Demo/UnitExtension/Resources/Prefabs/siege_tower.prefab",
+      "maxHealth": 120,
+      "initialHealth": 120
+    }
+  },
+  "buildings": {
+    "house": {
+      "prefab": "Assets/RTS Engine/Demo/BuildingExtension/Resources/Prefabs/house.prefab",
+      "maxHealth": 400,
+      "initialHealth": 1
+    },
+    "barracks_level2": {
+      "prefab": "Assets/RTS Engine/Demo/BuildingExtension/Resources/Prefabs/barracks_level2.prefab",
+      "maxHealth": 1400,
+      "initialHealth": 1,
+      "attackDamageUnit": 14,
+      "attackDamageBuilding": 14
+    },
+    "temple": {
+      "prefab": "Assets/RTS Engine/Demo/BuildingExtension/Resources/Prefabs/temple.prefab",
+      "maxHealth": 800,
+      "initialHealth": 1
+    },
+    "tower_level2": {
+      "prefab": "Assets/RTS Engine/Demo/BuildingExtension/Resources/Prefabs/tower_level2.prefab",
+      "maxHealth": 900,
+      "initialHealth": 1,
+      "attackDamageUnit": 8,
+      "attackDamageBuilding": 8
+    },
+    "barracks_level1": {
+      "prefab": "Assets/RTS Engine/Demo/BuildingExtension/Resources/Prefabs/barracks_level1.prefab",
+      "maxHealth": 1200,
+      "initialHealth": 1
+    },
+    "granary": {
+      "prefab": "Assets/RTS Engine/Demo/BuildingExtension/Resources/Prefabs/granary.prefab",
+      "maxHealth": 1000,
+      "initialHealth": 1
+    },
+    "siege_factory": {
+      "prefab": "Assets/RTS Engine/Demo/BuildingExtension/Resources/Prefabs/siege_factory.prefab",
+      "maxHealth": 1200,
+      "initialHealth": 1
+    },
+    "tower_level1": {
+      "prefab": "Assets/RTS Engine/Demo/BuildingExtension/Resources/Prefabs/tower_level1.prefab",
+      "maxHealth": 750,
+      "initialHealth": 1,
+      "attackDamageUnit": 14,
+      "attackDamageBuilding": 14
+    },
+    "university": {
+      "prefab": "Assets/RTS Engine/Demo/BuildingExtension/Resources/Prefabs/university.prefab",
+      "maxHealth": 800,
+      "initialHealth": 1
+    },
+    "farm": {
+      "prefab": "Assets/RTS Engine/Demo/BuildingExtension/Resources/Prefabs/farm.prefab",
+      "maxHealth": 400,
+      "initialHealth": 1
+    },
+    "town_center": {
+      "prefab": "Assets/RTS Engine/Demo/BuildingExtension/Resources/Prefabs/town_center.prefab",
+      "maxHealth": 2500,
+      "initialHealth": 1
+    }
+  }
+}

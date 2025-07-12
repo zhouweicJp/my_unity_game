@@ -1,0 +1,19 @@
+End Goal: Integrate a title screen, visual novel (VN) sequences, and predefined RTS battles into a cohesive game flow. The player starts from the title screen, enters story mode, progresses through VN scenes, and transitions into RTS sessions. After each battle outcome, the flow returns to VN scenes to continue the narrative or restart the battle as needed.
+
+Task Breakdown:
+
+RTS
+- Add unique units and buildings for each faction.
+- Implement custom game builders or lobbies to load predefined maps.
+
+VN
+- Create a script-based VN system to display character images, dialogue text, and branching choices.
+- Support scene transitions that load RTS sessions after VN segments conclude.
+
+TITLE
+- Build a title screen with options to start story mode, load a saved game, or quit.
+- Use SceneLoader to transition from the title screen into the first VN scene.
+
+UI
+- Provide menus for game pause, victory, defeat, and player choices.
+- Ensure consistent UI style across VN and RTS sections.

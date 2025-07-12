@@ -1,6 +1,10 @@
 import os
 import re
 import json
+import shutil
+
+TEMPLATE_UNIT_PREFAB = os.path.join('Assets', 'RTS Engine', 'Demo', 'UnitExtension', 'Resources', 'Prefabs', 'villager.prefab')
+TEMPLATE_BUILDING_PREFAB = os.path.join('Assets', 'RTS Engine', 'Demo', 'BuildingExtension', 'Resources', 'Prefabs', 'house.prefab')
 
 STATS_FILE = os.path.join('Tools', 'RTS_EntityStats.json')
 pattern_health = re.compile(r"maxHealth:\s*\d+")
@@ -28,7 +32,16 @@ def main():
         if group in data:
             for name, entry in data[group].items():
                 path = entry.get('prefab')
-                if path and os.path.exists(path):
+                if not path:
+                    continue
+
+                if not os.path.exists(path):
+                    template = TEMPLATE_UNIT_PREFAB if group == 'units' else TEMPLATE_BUILDING_PREFAB
+                    os.makedirs(os.path.dirname(path), exist_ok=True)
+                    shutil.copy(template, path)
+                    print(f"Created {path} from template {template}")
+
+                if os.path.exists(path):
                     apply_stats(path, entry)
                     print(f"Updated {path}")
 

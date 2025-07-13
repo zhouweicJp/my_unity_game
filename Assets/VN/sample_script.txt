@@ -1,0 +1,69 @@
+# Sample VN script for demonstration
+label start:
+scene classroom_day
+show teacher happy
+teacher "Good morning class. Welcome to VN Manager."
+student "Good morning teacher!"
+teacher "Today we'll learn how to create visual novel scenes in Unity."
+student "Sounds fun!"
+teacher "We'll start with the basics."
+student "What do we need first?"
+teacher "First, you'll need to import the VNManager prefab into your scene."
+student "Got it, what's next?"
+teacher "Then you create a TextAsset with your story script."
+student "Like this file?"
+teacher "Exactly. Save it under the Resources folder so the manager can load it."
+student "Okay. What about characters?"
+teacher "You can show characters with the 'show' command."
+student "Cool! Can I change expressions?"
+teacher "Yes, just specify the expression name."
+student "Nice!"
+teacher "Great. We'll also use menus for choices."
+student "Choices will let the player branch the story, right?"
+teacher "Correct."
+student "How do we define a choice?"
+teacher "Use the 'menu:' command with indented options."
+student "That's simple."
+teacher "Now let's demonstrate with a small question."
+menu:
+    "Do you understand?" 
+    jump understood
+    "Can you repeat?" 
+    jump repeat
+
+label repeat:
+teacher "Sure, let's go over it again."
+student "Thanks!"
+jump understood
+
+label understood:
+teacher "Fantastic. Let's continue."
+student "What's next?"
+teacher "Now you can call other labels or scenes."
+student "Great!"
+teacher "We'll stop here for now."
+student "Alright. Thanks for the lesson!"
+call extended
+return
+
+label extended:
+teacher "This is an extended conversation for the sample script."
+student "We can keep talking for demonstration."
+teacher "The more lines we add, the better we can test."
+student "Should we talk about backgrounds?"
+teacher "Sure. Use the 'scene' command with the background name."
+student "Can I change the background anytime?"
+teacher "Yes. Whenever you want a new setting."
+student "And it loads from Resources/VN/Backgrounds?"
+teacher "Correct again."
+student "Nice. What about character positions?"
+teacher "This simple system doesn't handle positions yet."
+student "Maybe we can extend it later."
+teacher "That's a good idea."
+student "What about playing sound?"
+teacher "You could extend the parser to handle that too."
+student "So basically it's flexible?"
+teacher "Exactly. Modify or add commands to suit your needs."
+student "Thanks for explaining everything."
+teacher "You're welcome."
+return
